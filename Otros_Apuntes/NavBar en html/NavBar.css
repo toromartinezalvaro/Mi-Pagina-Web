@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul, ol {
+    list-style: none;
+
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    /*AGREGANDO EL ESTILO A LA NAVBAR, se usa el selector "nav" por que es la que contiene toda la "navbar"*/
+    width: 1000px;
+    /*el "auto" del "margin" es para centrar la "navbar"*/
+    margin: 20px auto;
+    /*overflow: hidden */
+    overflow: hidden;
+    border-radius:4px;
+    border-bottom:1px solid #555555;
+
+    /*agregando degradado de color a la navbar (hecho en "https://www.colorzilla.com/gradient-editor/")*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8b8b8b+1,6a6a6a+50,5e5e5e+52,717171+100 */
+    background: #8b8b8b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #8b8b8b 1%, #6a6a6a 50%, #5e5e5e 52%, #717171 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #8b8b8b 1%,#6a6a6a 50%,#5e5e5e 52%,#717171 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #8b8b8b 1%,#6a6a6a 50%,#5e5e5e 52%,#717171 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#717171',GradientType=0 ); /* IE6-9 */
+}
+
+.menu {
+    /*El 15% sobrante es el espacio que se le dara a la barra de busqueda */
+    width: 85%;
+    /*"display:table;" mostrara esta parte del menu como si fuese una tabla*/
+    display:table;
+    /*con fixed todos los elementos de la navbar tendran el mismo tamaño*/
+    table-layout: fixed;
+    float: left;
+    transition: all .5s ease;
+}
+
+/*agregando lineas de separacion entre cada elemento (li y barra de busqueda)*/
+.menu li {
+    display:table-cell;
+    overflow: hidden;
+    width:100%;
+    border-right: 1px solid #5c5c5c;
+    border-left: 1px rgba(255,255,255,.2);
+}
+
+/*quitando el primer borde izquierdo*/
+.menu li:first-child{
+    border-left: none;
+}
+
+/*Editando la fuente*/
+.menu li a {
+    color:#fff;
+    display:block;
+    front-family:"Myriad Pro", Arial;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    /*poniendo transparencia (opacidad de 30%)*/
+    text-shadow: 1px 1px 0px rgba(0,0,0.3)
+}
+
+/*Agregando los botones. cuando pasamos el cursor sobre el boton, este se oscurecera*/
+.menu li:hover {
+    background: rgba(0,0,0,.3);
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom:none; 
+}
+
+/*Agregando los estados de los botones (cambian de color al dar click)*/
+.menu li:active {
+    background:rgba(0,0,0,.3);
+    box-shadow: inset 0px 3px 2px rgba(0,0,0,1);
+}
+
+/*Añadiendo la barra de busqueda al lado derecho del menu. El "transition" es para que la barra crezca progresivamente (y no de golpe) al darle click*/
+.search_bar {
+    width: 15%;
+    float:left;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    position:relative;
+    transition: all .5s ease;
+}
+
+/*dando estilo a la barra de busqueda*/
+.search_bar input {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: none;
+    border-bottom: 1px solid #858585;
+    /*este padding es para que no escriba desde el comienzo del recuadro*/
+    padding:0px 10px 0px 25px;
+    box-sizing: border-box;
+    height: 22px;
+
+    box-shadow:inset 0px 1px 3px rgba(0,0,0,.7);
+
+    /*agregando color de fondo a la barra de busqueda*/
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7e7e7e+1,797979+50,6e6e6e+52,767676+100 */
+    background: #7e7e7e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7e7e7e 1%, #797979 50%, #6e6e6e 52%, #767676 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7e7e7e 1%,#797979 50%,#6e6e6e 52%,#767676 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7e7e7e 1%,#797979 50%,#6e6e6e 52%,#767676 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#767676',GradientType=0 ); /* IE6-9 */
+}
+
+/*Para que al dar click en la barra, el fondo pase a ser de color blanco*/
+.search_bar input:focus{
+    background: white;
+    box-shadow:none;
+}
+
+/*organizando icono de la flama*/
+.icon-fire {
+    display: block;
+    position:relative;
+    top: 2px;
+}
+
+/*organizando icono de la lupa*/
+.icon-search {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #fff;
+    text-decoration: none;
+}

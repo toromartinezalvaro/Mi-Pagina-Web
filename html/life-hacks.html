@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/fondo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Life Hacks</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="index.html" id="inicio">◄ VOLVER A LA PAGINA PRINCIPAL</a>
+    <h1>EMMET ABBREVIATION: TRUCOS PARA ESCRIBIR MAS RAPIDO EN VSCODE</h1>
+    <BR/>
+    <h2 class="indice">Enlaces de interes:</h2>
+    
+    <a class="hipervinculos" href="#tag_wraper">Meter codigo dentro de etiquetas---HTML TAG wrapper</a>
+    
+    <br><br><a class="hipervinculos" href="#alt_click">Modificar varias etiquetas al mismo tiempo</a>
+    
+    <br><br><a class="hipervinculos" href="#p.hola">Escribir rapidamente una etiqueta y su clase</a>
+    
+    <br><br><a class="hipervinculos" href="#id">Agregar un ID a una etiqueta</a>
+    
+    <br><br><a class="hipervinculos" href="#escribir_rapido">Como escribir etiquetas dentro de otras de forma rapida</a>
+    
+    <br><br><a class="hipervinculos" href="#etiquetas_independientes">Agregar varias etiquetas sin que una contenga a la otra</a>
+    
+    <br><br><a class="hipervinculos" href="#escritura rapida">Escritura rapida avanzada</a>
+    
+    <br><br><a class="hipervinculos" href="#agregar_texto">agregar texto a una etiqueta y multiplicar la etiqueta</a>
+    
+    <br><br><a class="hipervinculos" href="#atributos_de_etiquetas">Agregar atributos a las etiquetas de forma rapida</a>
+    
+    <br><br><a class="hipervinculos" href="#div_con_atributo">Como crear un "div" con un atributo</a>
+    
+    <br><br><a class="hipervinculos" href="#conteo_automatico">Como hacer conteo automatico</a>
+    
+    <br><br><a class="hipervinculos" href="#agrupar_elementos">Como agrupar elementos</a>
+    
+    <br><br><a class="hipervinculos" href=""></a>
+    
+    <br><br><a class="hipervinculos" href=""></a>
+    
+    <br><br><a class="hipervinculos" href=""></a>
+    <br>
+    <h2>EXTENSIONES:</h2>
+    <Br/>
+    <h2 id="tag_wraper">METER CODIGO DENTRO DE ETIQUETAS---HTML TAG wrapper:</h2>
+    <p>
+        "CTRL + i": Si tenemos codigo escrito y lo queremos meter dentro de por ejemplo una etiqueta "div", señalamos el codigo y seguido presionamos "CTRL"+"i"
+    </p>
+    <br>
+    <h2 id="alt_click">alt + click</h2>
+    <p>
+        Si quisiera cambiar el texto de diferentes etiquetas a la vez, con esta extension se puede hacer, solo es necesario mantener presionado "alt" mientras se da click en los diferentes sitios a editar
+    </p>
+    <br>
+    < a href="">alt + click en cada uno de estos< /a>    <br>
+    < a href="">alt + click en cada uno de estos< /a>    <br>
+    < a href="">alt + click en cada uno de estos< /a>    <br>
+    < a href="">alt + click en cada uno de estos< /a>    <br>
+    <br>
+    <h2 id="p.hola">P.HOLA es igual que < p class="HOLA">< /p ></h2>
+    <p>
+        "p.hola" es un ejemplo para aclarar como ahorrar tiempo al escribir codigo, si escribimos el nombre de una etiqueta, seguido de un punto y un string, se creara la etiqueta y el string sera la clase de esa etiqueta(el punto crea la clase de la etiqueta), por lo cual al escribir "p.hola" y dar enter, se crearia la siguiente linea de codigo(sin espacios) < p class="hola>< /p >"
+    </p>
+    <br>
+    <h2 id="id">PARA PONER UN "ID" A UNA ETIQUETA(div#nombre_id):</h2>
+    <p>
+        Usando una etiqueta "div"(por ejemplo), para agregarle un "id", escribiriamos por ejemplo "div" + "#" + "nombre del id" obteniendo la siguiente linea de codigo(sin espacios) < div class="" id="nombre del id">< /div >
+    </p>
+    <br>
+
+    <h2 id="escribir_rapido">COMO ESCRIBIR ETIQUETAS DENTRO DE OTRAS DE FORMA RAPIDA(header>nav>ul>li)</h2>
+    <p>
+        Si por ejemplo queremos crear una etiqueta "header" que contenga una etiqueta "nav" que a su vez contenga una etiqueta "ul" que a su vez contenga 5 etiquetas "li" usariamos el simbolo ">" para indicar cual etiqueta va dentro de cual lo hariamos escribiendo lo siguiente "header>nav>ul>li*5" y por ultimo dariamos enter para obtener el codigo
+    </p>
+    
+    <p>
+    EJEMPLO (sin los puntos):    <br>
+    ....< header>    <br>
+    ........< nav>    <br>
+    ............< ul>    <br>
+    ................< li>< /li>    <br>
+    ................< li>< /li>    <br>
+    ................< li>< /li>    <br>
+    ............< /ul>    <br>
+    ........< /nav>    <br>
+    ....< /header>    <br>
+         
+    </p>
+<br>
+<h2 id="etiquetas_independientes">AGREGAR VARIAS ETIQUETAS SIN QUE UNA CONTENGA A LA OTRA(nav+p+a)</h2>
+<p>
+    usariamos el simbolo "+" para que se ponga una etiqueta debajo de la otra por ejemplo si ponemos "nav+p+a" hara una etiqueta "nav", debajo hara una etiqueta "p" y por ultimo debajo hara una etiqueta "a" si quisieramos que estas etiquetas estuvieran dentro de la etiqueta "header"por ejemplo, usariamos una combinacion de los dos ultimos metodos ">" y "+", ejemplo header>nav+p+a 
+</p>
+<p>
+    EJEMPLO: header>nav+p+a daria el siguiente codigo (sin los puntos)   <br>
+        < header>   <br>
+        ....< nav>< /nav>   <br>
+        ....< p>< /p>   <br>
+        ....< a href="">< /a>   <br>
+        < /header>   <br>
+    
+</p>
+<br>
+<h2 id="escritura rapida">(header>div^p) Si queremos que "header" contenga la etiqueta "nav" pero que la etqueta "p" este fuera de "header":</h2>
+<p>
+    escribiriamos "header>div^p" esto hara que "div" este dentro de "header", pero la etiqueta "p" quedaria fuera de "header"
+<p>
+<p>
+    EJEMPLO (sin los puntos):    <br>
+    < header>    <br>
+    ....< div>< /div>    <br>
+    < /header>    <br>
+    < p>< /p>    <br>
+</p>
+<p>
+    Ahora bien, si hay mas etiquetas no bastaria con un solo "^". Por ejemplo si "header" contiene a "nav" que a su vez contiene"div" y queremos poner la etiqueta "p" fuera del header, no bastaria con un solo "^" necesitariamos uno para salir de la etiqueta "nav" y otro para salir de la etiqueta "header" por lo cuar se escribiria asi "header>nav>div^^p"
+</p>
+<p>
+    EJEMPLO (sin los puntos):    <br>
+    < header>    <br>
+    ....< nav>    <br>
+    ........< div>< /div>    <br>
+    ....< /nav>    <br>
+    < /header>    <br>
+    < p>< /p>    <br>
+    
+</p>
+<br>
+<h2 id="agregar_texto">(p{hola}*9)agregar texto a una etiqueta y multiplicar la etiqueta</h2>
+<p>
+    para hacer esto, escribimos el nombre de la etiqueta y entre llaves pondremos el texto que contendra esa etiqueta, ademas podemos multiplicar el numero de veces que se repetita esa etiqueta agregando "*" + el numero de veces que se desea repetir
+</p>
+<p>
+    EJEMPLO:    <br>
+    p{hola}*3    <br>
+    < p>hola< /p>    <br>
+    < p>hola< /p>    <br>
+    < p>hola< /p>    <br>
+</p>
+<br>
+<h2 id="atributos_de_etiquetas">(a[href="#"])AGREGAR ATRIBUTOS A LAS ETIQUETAS</h2>
+<p>
+    Los atributos se agregan dentro de los corchetes "[]" y si ademas queremos agregar texto lo hariamos asi "a[href="#"]{aqui va el texto}"
+</p>
+<p>
+    EJEMPLO:    <br>
+    a[href="#"]{texto aqui}    <br>
+    < a href="#">texto aqui< /a>    <br>
+</p>
+<br>
+<h2 id="div_con_atributo">COMO CREAR UN "DIV" CON UN ATRIBUTO, CLASE, HREF, ETC</h2>
+<P>
+    Para hacerlo solo necesitamos poner un punto seguido del tipo de dato como hemos visto anteriormente, por ejemplo ".[href="#"]" creara un "div" con "href". Tambien serviria para crear por ejemplo un div con un contenedor asi ".contenedor"
+</P>
+<p>
+EJEMPLO:   <br>
+.[href="#"]   <br>
+< div class="" href="#">< /div>   <br>
+EJEMPLO2:   <br>
+.contenedor
+< div class="contenedor">< /div>   <br>
+</p>
+<br>
+<h2 id="conteo_automatico">Conteo automatico, SI QUEREMOS HACER POR EJEMPLO ETIQUETAS "P" QUE CUENTEN DEL 1 AL 10---"p{$}*10"</h2>
+<p>
+    pondremos el nombre de la etiqueta (ya sea nav, p, header, etc) seguido de llaves "{}" que contendran el signo pesos asi "{$}", luego fuera de las llaves "*" + "numero de veces que queremos que cuente". esto serviria por ejemplo para crear varias clases, 
+</p>
+<p> ejemplo:
+p{parrafo numero $}*5 daria como resultado el siguiente codigo: <br>
+< p>parrafo numero 1< /p> <br>
+< p>parrafo numero 2< /p> <br>
+< p>parrafo numero 3< /p> <br>
+< p>parrafo numero 4< /p> <br>
+< p>parrafo numero 5< /p> <br>
+</p>
+<p>
+    Si por ejemplo queremos hacer varias etiquetas con diferentes clases, lo hariamos asi "a.clase$*4" esto crearia 4 etiquetas "a" con si respectiva clase (clase1, clase2, clase3, clase4)). Este codigo daria el siguente resultado:
+</p>
+<br>
+<p>
+    < a href="" class="clase1">< /a> <br>
+    < a href="" class="clase2">< /a> <br>
+    < a href="" class="clase3">< /a> <br>
+    < a href="" class="clase4">< /a> <br>
+</p>
+<p>
+    < a href="" class="clase1">< /a> <br>
+    < a href="" class="clase2">< /a> <br>
+    < a href="" class="clase3">< /a> <br>
+    < a href="" class="clase4">< /a> <br>
+</p>
+<br>
+<p>
+    Si ademas quisieramos crear una etiqueta con items enumerados del 1 al 5 lo hariamos asi "li{item #$}*5" y tendriamos el siguiente resultado
+</p>
+<p>
+    < li>item #1< /li> <br>
+    < li>item #2< /li> <br>
+    < li>item #3< /li> <br>
+    < li>item #4< /li> <br>
+    < li>item #5< /li> <br>
+</p>
+
+
+
+<br>
+<h2 id="agrupar_elementos">COMO AGRUPAR ELEMENTOS "header>(nav>ul>li{hola}*3)+p"</h2>
+<p>
+    esa linea diria que "p" sera hermano de todo lo que este dentro d elos parentesis(nav>ul>li{hola}*5) y ambos estaran dentro de la etiqueta "header"
+</p>
+<p>
+    ejemplo:    <br>
+"header>(nav>ul>li{hola}*5)+p" dara como resultado el siguiente codigo (SIN LOS PUNTOS)   <br>
+< header>    <br>
+....< nav>    <br>
+........< ul>    <br>
+............< li>hola< /li>    <br>
+............< li>hola< /li>    <br>
+............< li>hola< /li>    <br>
+............< li>hola< /li>    <br>
+............< li>hola< /li>    <br>
+........< /ul>    <br>
+....< /nav>    <br>
+< /header>    <br>
+</p>    
+
+<p>
+    Tambien podemos agrupar 2 conjuntos de la siguiente manera "header>(nav>ul>li{hola}*3)+(div>p+a)"
+</p>
+<P>
+EJEMPLO:    <br>
+"header>(nav>ul>li{hola}*3)+(div>p+a)" daria el siguiente codigo (SIN LOS PUNTOS)    <br>
+< header>    <br>
+....< nav>    <br>
+........< ul>    <br>
+............< li>hola< /li>    <br>
+............< li>hola< /li>    <br>
+............< li>hola< /li>    <br>
+........< /ul>    <br>
+....< /nav>    <br>
+....< div>    <br>
+........< p>< /p>    <br>
+........< a href="">< /a>    <br>
+....< /div>    <br>
+< /header>
+</P>
+<br><br><br><br><br><br>
+<a href="#inicio">▲ VOLVER AL INICIO</a>
+</body>
+</html>

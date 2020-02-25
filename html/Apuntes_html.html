@@ -1,0 +1,175 @@
+<!DOCTYPE html> <!--sirve para indicar que es un archivo de html-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--indica el formato en que se guardara-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resumen HTML</title> <!--indica el titulo de la página(aparece en la pestaña del navegador)-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="index.html" id="inicio">◄ VOLVER A PAGINA PRINCIPAL</a>
+    <h1>RESUMEN DEL CURSO DE "OPENCLASSROOMS"</h1>
+    <br>
+    <h2 class="indice">De interes:</h2>
+    <a href="#etiquetas" title="Etiquetas de HTML">Etiquetas de HTML</a> 
+    <br>
+    <a href="#enlaces" title="Enlace entre una pagina y otra">Como crear un enlace entre una pagina y otra</a> 
+    <br>
+    <a href="#hipervinculo" title="Hipervinculo en la misma pagina">Como hacer enlace a un hipervinculo de la misma pagina</a>
+    <br>
+    <a href="#hipervinculo2" title="Hipervínculo en otra página">Como crear un enlace a un hipervínculo situado en otra página</a>
+    <br>
+    <a href="#atributos" title="Atributos existentes">Atributos</a> 
+    <br>
+    <a href="#mailto" title="Que se usa para recivbir correos">Como recibir correos?</a>
+    <br>
+    <a href="#descargar" title="Como descargar un archivo?">Descargar un archivo</a>
+    <br>
+    <br>
+
+
+
+
+    <h2 id="etiquetas">Etiquetas de HTML</h2>
+    <ul>
+        <br>
+            <li><b>title:</b> muestra el título de la página en la barra de título del navegador</li>
+        <br>
+            <li><b>em:</b> coloca el texto en cursiva (Nota:es el navegador él que elije la forma en la que se muestran las palabras. Le diremos que las palabras son bastante importantes y para enfatizar esta información cambia la apariencia del texto con el uso de cursiva.)</li>
+        <br>
+            <li><b>strong:</b> (énfasis fuerte) Para enfatizar considerablemente un texto (Nota: el texto aparecerá en negrita. También en este caso la negrita es un solo una consecuencia . El navegador eligió mostrar las palabras importantes en negrita para hacer que destaquen más.)</li>
+        <br>
+            <li><b>mark:</b> (Resaltador) se usa para resaltar visualmente una parte del texto. El extracto no se tiene que considerar necesariamente importante, pero queréis que destaque del resto del texto.</li>
+        <br>
+            <li><b>ul:</b> Sirve para hacer listas desordenadas(por puntos). delimita la lista completa
+            </li>
+        <br>
+            <li><b>li: </b> define un elemento de la lista (crea una viñeta en la lista, cada li es una viñeta para un item)</li>
+        <br>
+            <li><b>ol: </b> Sirve para hacer listas ordenadas (por numeros). delimita la lista completa
+            </li>
+        <br>
+            <li><b>a:</b> Sirve para crear un enlace (el enlace se pondra en el atributo href="Enlace aqui")</li>
+        <br>
+            <li><b>div:</b> division (para hacer cajas, divisiones, etc)</li>
+        <br>
+            <li><b>form: </b> para hacer formularios se usa de forma similar a las etiquetas "ul" u "ol" (dentro de la etiqueta form se ponen etiquetas como por ejemplo "label", "input", "button", etc )</li>
+        <br>
+            <li><b>input: </b> cpermite al usuario ingresar datos desde teclado o mouse</li>
+        <br>
+            <li><b>label: </b> crea un texto antes del recuadro de input (se pueden enlazar) como por ejemplo escribir usuario o contraseña antes de los recuadros de usuario o contraseña respectivamente</li>
+        <br>
+            <li><b>iframe: </b> sirve para poner un archivo html dentro de otro</li>
+        <br>
+            <li><b>button:</b> Crea un boton</li>
+        <br>
+            <li><b>table: </b> Sirve para crear tablas, dentro se deben usar las etiquetas tr(para las filas) y dentro de las etiquetas tr usar las etiquetas td(para las celdas) o th(para las celdas que contienen titulos)</li>   
+        <br>
+            <li><b>th: </b> Crea celdas con titulos (complementa la etiqueta table)</li>
+        <br>
+            <li><b>tr: </b> crea cada fila de la tabla (complementa la etiqueta table)</li>
+        <br>
+            <li><b>td: </b> crea una celda en la tabla (complementa la etiqueta table)</li>
+        <br>
+            <li><b>style: </b> Sirve para agregar estilo css directamente en el archivo html (normalmente se usa entre el head y el body)</li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+    </ul>
+    <br>
+    <h2 id="enlaces">Como crear un enlace entre una pagina y otra:</h2>
+    <p>
+        Los enlaces se crearan mediante la etiqueta "a", esta etiqueta debera tener un atributo llamado "href" luego se pondra un signo "=" seguido de comillas que contendran el enlace al que deseamos ir <br> Ejemplo: <mark> < a href="google.com">enlace a google< /a> </mark>
+    </p>
+    <br>
+
+    <h2 id="hipervinculo">Como hacer enlace a un hipervinculo de la misma pagina (para que se vaya directo a la parte que deseamos)</h2>
+    <p>
+        Un hipervínculo es una especie de punto de referencia que puedes incluir en tus páginas HTML cuando son muy largas.<br>
+        De hecho, pueden ser útiles para crear un enlace a un punto situado más abajo en la misma página para permitir a los visitantes saltar directamente a la parte que les interesa.<br>
+            
+        Para crear un hipervínculo nuevo, Puede ser cualquier etiqueta, por ejemplo un título.<br>
+        Para dar un nombre al hipervínculo, se utiliza el atributo id. Entonces podremos usarlo para crear un enlace a este hipervínculo. <br>
+        Ahora solo tienes que crear un enlace como siempre, pero esta vez el atributo href incluirá una almohadilla (#) seguida del nombre del enlace. <br>
+        Ejemplo: 
+        <br> <mark>Etiqueta numero 1: </mark> <h2>probando enlace</h2>
+        <br> <mark>Etiqueta numero 2: (esta nos llevara a la otra)</mark> <a href="#probando enlace"> este link nos dirigira a "probando enlace"</a>
+    </p>
+    <br>
+
+    <h2 id="hipervinculo2">Como crear un enlace a un hipervínculo situado en otra página:</h2>
+    <p>
+        La idea es crear un enlace que abra otra página Y que te lleve directamente a un hipervínculo situado más abajo de esta página. <br>
+        En la práctica es muy fácil hacerlo: escribe el nombre de la página, seguido por una almohadilla ( #), seguido del nombre del hipervínculo. <br> 
+            Ejemplo: <mark>< a href="anchors.html#rodillos">< /a></mark> 
+        <br>
+        El anterio ejemplo te llevará a la página anchors.html, directamente al hipervínculo llamado rodillos
+    </p>
+    <br>
+
+    <h2 id="atributos">Atributos:</h2>
+    <br>
+    <p>
+        Los atributos estan situados dentro de las etiquetas y sirven para establecer las caracteristicas de las mismas, los atributos se usan poniendo el nombre del atributo seguido de el signo igual(=) y finalmente entre comillas se pondra la identificacion del atributo <br>
+        Ejemplo: <mark>atributo="aqui lo que lo identifica"</mark>
+    </p>
+    <ul>
+        <br>
+            <li><b>href:</b> Se usa en las etiquetas "a", sirve para determinar el destino con el que vamos a enlazar dicha etiqueta </li>
+        <br>
+            <li><b>id:</b> Se usa para dar una identificacion a la etiqueta, el id es unico y no se debe usar el mismo en diferentes etiquetas</li>
+        <br>
+            <li><b>title:</b> muestra una descripción emergente cuando coloques el curso sobre el enlace. La descripción emergente puede ser útil para proporcionar información a los visitantes incluso antes de que hayan hecho clic sobre el enlace.</li>
+        <br>
+            <li><b>target="_blank":</b> Obliga al enlace a abrirse en una nueva ventana</li>
+        <br>
+            <li><b>type: </b> se usa en la etiqueta input </li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+        <br>
+            <li><b></b></li>
+    </ul>
+    <h2 id="mailto">Como recibir correos?</h2>
+    <p>
+        para recibir correos usariamos la etiqueta "a" que nos llevara al link de nuestro correo y dentro de esta etiqueta pondremos el atributo "href" que contendra en principio el comando "mailto:" seguido de nuestro correo electronico <br>
+        Ejemplo: <mark>< a href="mailto:torom.alvaro@gmail.com">Enviame un correo electronico!< /a></mark>
+    </p>
+    <br>
+    <h2 id="descargar">Como descargar un archivo?</h2>
+    <p>
+        El procedimiento es exactamente el mismo que para enlazar a una página web, pero esta vez tenemos que indicar el nombre del archivo que queremos que se descargue. <br>
+        Por ejemplo, imagina que quieres descargar "myfile.zip" Solo tienes que colocar este archivo en la misma carpeta que tu página web (o en una subcarpeta) y crear un enlace a este archivo. <br>
+        Ejemplo: <mark>< a href="myfile.zip">Descargar el archivo< /a></mark> <br>
+        Cuando el navegador vea que no hay ninguna página web que mostrar, comenzará el proceso de descarga cuando el usuario haga clic sobre el enlace.
+    </p>
+
+    <br><br><br>
+    <a href="#inicio">▲ VOLVER AL INICIO</a>
+</body>
+</html>

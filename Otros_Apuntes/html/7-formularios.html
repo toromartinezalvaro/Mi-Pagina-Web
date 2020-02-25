@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/fondo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>COMO HACER FORMULARIOS "< form>< /form>"</h1>
+    <p>
+        Los formularios son una parte de las paginas web con las que los usuarios pueden interactuar ya sea escribiendo texto o haciendo alguna accion que despues seran procesados los datos para que el programa de una respuesta.
+    </p>
+    <br>
+
+    <h2>Atributos y metodos de los formularios:</h2>
+    <p>
+        los atributos y metodos van dentro de la primera etiqueta "form" asi <b>"< form atributo="" method="">< /form>"</b>. Existen varios atributos para los formularios, aqui esta la descripcion y uso de algunos.
+    </p>
+    <ul>
+        <li>
+            <b>action=""</b> :Este atributo recibe como valor una "url" que se encarga de procesar los datos del formulario, como por ejemplo un archivo "datos.php" de la siguiente forma 
+        </li> <br>
+            <ul>
+                <li>
+                        "< form action="datos.php">< /form>"
+                </li> <br>
+            </ul>
+        <li>
+            <b>method=""</b> :Al usar el atributo "action" debemos usar el atributo "method" que nos servira para determinar por cual metodo vamos a enviar nuestra informacion, sea el metodo "POST" o el metodo "GET" de la siguiente manera:
+        </li> <br>
+            <ul>
+                <b>
+                    <li>< form action="" method="POST">< /form></li>
+                    <li>< form action="" method="GET">< /form></li>
+                </b>
+            </ul> <br>
+        <li></li>
+    </ul>
+    <br>
+
+    <h2>COMO HACER UN INPUT:</h2>
+    <p>
+        Ahora veremos los tipicos campos de texto en los que siempre nos piden por ejemplo el nombre, el correo, contraseña etc. TODOS LOS CAMPOS SE LLAMARAN CON LA ETIQUETA "input" que puede contener diversidad de atributos que nos ayudaran a determinar el funcionamiento y visualizacion de nuestra etiqueta (recordando que lo siguiente ya estaria dentro de la etiqueta "form"). Los atributos serian los siguientes:
+    </p>
+    <br>
+
+    <h2>ATRIBUTOS DE LOS INPUT:</h2>
+    <ul>
+        <li>
+             <b>TYPE:</b>El atributo "type" nos sirve para especificar que tipo de dato se usara en el "input",  EJEMPLO:
+             <P>
+                <b>< input type="text"></b> Esta linea de codigo generaria el siguiente "input" en el que podremos escribir nuestro nombre
+            </P>
+            <ul>
+                <li>
+                    <input type="text">
+                </li>
+            </ul>
+            <p>
+                Tambien podemos usar en el atributo "type" un "password" en el que no se vera lo que escribimos de la siguiente manera
+            </p>
+            <ul>
+                <p>
+                    <b>< input type="password"></b>
+                </p>
+                
+                <li>
+                    <input type="password">
+                </li><br>                
+            </ul>
+            <p>
+                Si usamos el atributo <b>type="email", tendremos un input que verificara que el correo que escribamos en el sea correcto, pero debemos. EJEMPLO:</b>
+            </p>
+            <ul>
+                <p>
+                    <b>< input type="email" name="" id=""></b>
+                </p>
+                <br>
+                <input type="email" name="" id="">
+            </ul>
+            <br>
+            <p>
+                Otro atributo <b>"type"</b> que podemos usar el es <b>"checkbox"</b> que nos permitira hacer un recuadro de chequeo para elegir alguna opcion.  si deseamos que solo se pueda elegir una opcion usaremos <b>type="radio"</b> EJEMPLO:
+            </p>
+            <ul>
+                <li><b>< input type="checkbox">HOMBRE</b></li>
+                <li><b><|input type="checkbox">MUJER</b></li>
+                <br>
+                <input type="checkbox" >HOMBRE
+                <input type="checkbox" >MUJER
+                <BR>
+                <li><b>< input type="radio">HOMBRE</b></li>
+                <li><b><|input type="radio">MUJER</b></li>
+                <br>
+                <input type="radio" >HOMBRE
+                <input type="radio" >MUJER
+            </ul>
+        </li>           
+        <BR></BR>
+
+        <li> 
+             <b>VALUE:</b> El atributo "value" sirve para dar un valor al "input", pero cuando el usuario quiera por ejemplo escribir su nombre, tendra que borrar el mensaje que pongamos en el atributo "value", en este caso "Escribe tu nombre". EJEMPLO (intenta escribir tu nombre):
+             <p>
+                <b>< input type="text" value="Escribe tu nombre"></b>
+            </p>
+            <ul>
+                <li>
+                    <input type="text" value="Escribe tu nombre">
+                </li>
+            </ul>
+        </li>        
+        <BR></BR>
+        
+        <li> 
+            <B>PLACEHOLDER:</B> El atributo "placeholder" sirve para dar un valor al "input", pero cuando el usuario quiera por ejemplo escribir su nombre NO tendra que borrar el mensaje que pongamos en el "input". EJEMPLO(intenta escribir tu nombre):
+            <P>
+                <b>< input type="text" placeholder="Escribe tu nombre"></b>
+            </P>
+            <ul>
+                <li>
+                    <input type="text" placeholder="Escribe tu nombre">
+                </li>
+            </ul>
+        </li>
+        <BR></BR>
+        
+        <li>
+            <b>SIZE</b> :En este ultimo "input" agregamos el atributo size que nos permitira modificar el tamaño del mismo. por ejemplo en este caso, el input sera mas pequeño que los demas ya que el valor de su atributo "size" es menor al de los demas. A pesar de servir para modificar el tamaño del "input", no se aconseja usarlo ya que es mas practico modificarlo con "css". Igualmente el ejemplo es el siguiente: 
+            <P>
+                <b>< input type="text" placeholder="Escribe tu nombre" size="10"></b> y daria como resultado el siguiente "input"
+            </P>
+            <ul>
+                <li>
+                    <input type="text" placeholder="Escribe tu nombre" size="10">
+                </li>
+            </ul>
+        </li> 
+        <BR></BR>
+        
+        <li>
+             :El atributo "maxlength" nos servira para determinar el numero de caracteres que permitira ingresar nuestro "input", por ejemplo si ponemos "7" en el atributo "maxlength" solo podremos escribir 7 caracteres, <b>intenta escribir en el ejemplo mas de 7 caracteres</b>
+             <P>
+                <b>< input type="text" placeholder="escribe tu nombre" maxlength="7"></b>
+             </P>
+             <ul>
+                <li>
+                    <input type="text" placeholder="escribe tu nombre" maxlength="7">
+                </li>
+            </ul>
+        </li> <br>
+        <BR></BR>        
+        
+        <li>
+            <b>NAME:</b> El atributo "name" se puede usar en cualquier elemento de nuestro formulario y nos permite indicarle al servidor que valor estamos poniendo a nuestro "input" asi podremos identificar direfentes "inputs" segun su nombre (name)
+            <p>
+                <b>< input type="text" placeholder="escribe tu nombre" name=""></b>
+            </p> 
+        </li>
+        <BR></BR>
+        
+        <li>
+            <b>ID:</b> El atributo "id" nos sirve para poder identificar el "input", lo que nos permitira usar dicha identificacion para por ejemplo con el uso de una etiqueta "label" (añadiendo el id a su atributo "for"), podremos añadir un texto en el cual al darle click, pondra la barra de escrituta en nuestro input ejemplo: 
+            <p>
+                < label for="prueba">Escribe tu nombre:</label>
+            </p>
+            <p>
+                < input type="text" placeholder="Escribe tu nombre" id="prueba">
+            </p>
+            <p>
+                las dos anteriores lineas de codigo estan conectadas por el atributo "for" de la etiqueta "label" y el atributo "id" de la etiqueta "input" por lo cual al dar click en el mensaje de la etiqueta "label" (que en este caso seria "Escribe tu nombre:") podremos empezar a escribir en el  cuadro de texto(input). <b>Para probrar lo anterior debes dar click en la frase "Escribe tu nombre:" que aparece en el siguiente ejemplo:</b>
+            </p>
+            <ul>
+                <li>
+                    <label for="prueba">Escribe tu nombre:</label>
+                    <input type="text" placeholder="Escribe tu nombre" id="prueba">
+                </li>
+            </ul>
+        </li>
+        <BR></BR>
+
+        <li>
+
+        </li>
+        <BR></BR>
+
+        <li></li>
+        <li></li>
+
+
+    </ul>
+
+</body>
+</html>

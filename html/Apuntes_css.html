@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resumen CSS</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <a href="index.html" id="inicio">◄ VOLVER A PAGINA PRINCIPAL</a>
+    <h1>RESUMEN DE CSS</h1>
+    
+    <h2 class="indice">Enlaces de interes:</h2>
+    <br><a href="#que_son_selectores" class="hipervinculos">Que son los selectores en CSS?</a>
+    <br>
+    <br><a href="#atributos_de_selectores" class="hipervinculos">Cuales son los atributos de los selectores que existen en CSS?</a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <br><a href="" class="hipervinculos"></a>
+    <br>
+    <p>
+        Css significa Cascading Style Sheets (hoja de estilo en cascada) por que se ejecuta de arriba hacia abajo. <br>
+        Existen 3 formas de trabajar con CSS:
+        <ol>
+            <li>crear un nuevo documento y enlazarlo con html (esta es la mas recomendable)</li> <br>
+            <li>colocando la etiqueta Style debajo de la etiqueta de cierre head(< /head>) en el archivo de html(se usa para probar el css antes de crear su respectivo archivo). </li> <br>
+            <li>escribir dentro de los atributos (se usa el atributo style con la finalidad de modificar la etiqueta directamente)</li>
+        </ol>
+    </p>
+    <br>
+    <h2 id="que_son_selectores">Que son los selectores en CSS?</h2>
+    <p>
+        Los selectores en CSS se usan para indicar que etiquetas queremos modificar, podemos hacerlo haciendo uso del nombre de la etiqeta(lo cual modificara todas las etiquetas de ese tipo) o agregarle clases y/o id a las etiquetas y usar dichas clases como selectores. Si queremos hacer un selector de una clase, este debera llevar un punto(.) antes del nombre de la clase (si quiero aplicarle mas de una clase a una etiqueta, dentro de las comillas solo debo separar los nombres de las clases con espacios asi: < p class”clase_1  clase_2” > < /p>), si por el contrario el selector es para un atributo "id" este debella llevar el signo numeral(#) antes del nombre del selector, por ultimo, si queremos hacer un selector con una etiqueta solo usaremos el nombre de la etiqueta sin ningun signo previo. Luego de esto se deberan abrir y cerrar llaves y dentro de las mismas iran los atributos que deseamos modificar <br>
+        Ejemplo: <br>
+        <ul>
+            <li><b>Selector de tipo clase: </b> class="perro" :  .perro{atributos a cambiar aqui}</li>
+            <li><b>Selector de tipo id: </b> id="perro" :  #perro{atributos a cambiar aqui}</li>
+            <li><b>Selector de agrupacion: </b> < p>< /p> :  p{atributos a cambiar aqui}</li>
+            <li><b>Selector de tipo Universal (*)</b> Modifica todas las caracteriaticas de todas las etiquetas</li>
+        </ul>
+    </p>
+    <h2 id="atributos_de_selectores">Cuales son los atributos de los selectores que existen en CSS?</h2>
+
+    <ul>
+        <li><b>color: red;</b> sirve para cambiar el color de la fuente</li>
+        <br>
+        <li><b>font-size: 20px;</b> sirve para dar el tamaño de la fuente en píxeles</li>
+        <br>
+        <li><b>text-align: center;</b> sirve para alinear el texto, en este caso en el centro</li>
+        <br>
+        <li><b>width: 700px;</b> modifica el ancho</li>
+        <br>
+        <li><b>height: 500px;</b> modifica la altura</li>
+        <br>
+        <li><b>border: solid blue;</b> hace un borde sólido de color azul</li>
+        <br>
+        <li><b>margin: 0 0 0 0;</b> modifica el margen, el primer cero es la parte de encima, el segundo de la derecha, tercero de abajo y el último de la izquierda</li>
+        <br>
+        <li><b>type: </b> Se usa para definir el tipo de dato que se ingresara en la etiqueta input, existen los siguientes tipos de datos para type:
+        <br> <ul>
+                <li><b>text: </b> para definir que sera un texto</li>
+                <li><b>password: </b> contraseña</li>
+                <li><b>radius: </b> muestra un circulo que se marca</li>
+                <li><b>date: </b> coloca un calendario para seleccionar una fecha</li>
+                <li><b>email: </b> requiere que se ingrese un @ por que es para un email</li>
+                <li><b>range: </b> barra escalable (se puede modificar dicho rango)</li>
+                <li><b></b></li>
+                <li><b></b></li>
+                <li><b></b></li>
+                <li><b></b></li>
+                <li><b></b></li>
+                <li><b></b></li>
+            </ul>
+        </li>
+        <br>
+        <li><b>font-family: verdana; </b> sirve para cambiar el tipo de fuente de la letra como por ejemplo verdana o times new romans</li>
+        <br>
+        <li><b>border: </b>para crear bordes </li>
+        <ul>
+            <li><b>solid 1px red;</b> crea un borde solido de 1 pixel de color rojo</li>
+            <li><b></b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+            <li><b></b></li>
+        </ul>
+        <br>
+        <li><b>padding: </b> espacio entre el centro y el borde (por defecto el tamaño es cero)</li>
+        <br>
+        <li><b>border-radius </b> redondea los bordes de un boton</li>
+        <br>
+        <li><b>cursor: pointer;</b> cambia el estilo del cursor cuando se pone encima del boton</li>
+        <br>
+        <li><b>outline: none;</b> para quitar lña linea azul que se hace cuando le doy click al boton</li>
+        <br>
+        <li><b></b></li>
+        <br>
+        <li><b></b></li>
+        <br>
+        <li><b></b></li>
+        <br>
+        <li><b></b></li>
+        <br>
+        <li><b></b></li>
+        <br>
+        <li><b></b></li>
+        <br>
+    </ul>
+    <br><br><br>
+    <a href="#inicio">▲ VOLVER AL INICIO</a>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/21omxpw.jpg);
+    color:white;
+  }
+
+h1,h2,h3,h4,h5,h6 {
+  color:rgb(0, 247, 33);
+}
+
+h1{
+  font-size: 45px;
+}
+
+h2{
+  font-size: 30px;
+}
+  
+b {
+  font-size: 20px;
+}
+
+.indice{
+  font-size: 35px;
+}
+
+/*COMENTO ESTA PARTE DEL CODIGO POR QUE PREFIERO MODIFICAR TODAS LAS ETIQUETAS "A"
+
+.hipervinculos{
+  font-size: 25px;
+}
+
+*/
+
+a{
+  color:rgb(0, 255, 255);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+li{
+  list-style: none;
+}
+
+li b{
+  color:rgb(208, 255, 0);
+  font-size: 20px;
+}

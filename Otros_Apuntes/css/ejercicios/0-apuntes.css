@@ -1,0 +1,21 @@
+
+/* es un lenguaje de hojas de estilos, NO es un lenguaje de programacion. 
+
+CSS nos permitecontrolar el aspecto y presentacion de los elementos(de titulo"<h1>", de parrafo "<p>", negrita "<b>", etc) que tiene nuestra pagina web. 
+
+Con CSS le damos propiedades al codigo para modificar su aspecto.
+
+Para agregar estilos "CSS" podemos ir al archivo "index.html" y usar css de las siguientes maneras
+    
+    metodo-1 (importando el css al archivo ".html"):"<link rel="stylesheet" href="ruta del archivo">"
+    
+    metodo-2 (usando "CSS" dentro del archivo ".html"): primero agregamos (en el archivo ".html") la etiqueta "style" y dentro de ella vamos a agregar todas la "propiedades y reglas CSS". Ejemplo:
+    <style type="text/css">PROPIEDADES Y REGLAS CSS</style>
+
+¿QUE SON LAS REGLAS EN CSS?
+
+    las reglas son un conjunto que contiene desde el princio hasta el fin de la siguiente linea de codigo:
+        body{background:#000000;}
+            Diriamos que en el cuerpo(body), pondremos el color negro(#000000;) en el fondo(background:) de nuestra pagina web
+
+*/

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SELECTORES DE CSS</h1>
+    <a href="#probando">probando</a>
+    <h2>¿Que son los selectores?</h2>
+    <p>
+        Son la parte de nuestras "reglas CSS" que nos permite indicar a quien le vamos a hacer cambios a su aspecto, por ejemplo podriamos cambiar el aspecto de la etiqueta "h1" o de todas las etiquetas "h2", etc. existen diferentes tipos de selectores:
+    </p>
+    <h2>SELECTORES GENERALES:</h2>
+    <ul>
+        <li>
+            <b>*{} </b> este es el selector UNIVERSAL, permite cambiar TODOS los aspectos de TODOS nuestros elementos. Dentro de este selector podriamos agregar propiedades como por ejemplo "margin" para agregar margen a nuestra pagina web o "padding" que cambiaria el margen interno que tienen los elementos
+        </li>
+        <br/>
+        <li><b>body{}</b> Este selector sirve para cambiar las caracteristicas del cuerpo(body) del "archivo.html"      
+        </li>
+        <br/>       
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+        <br/>
+        <li>
+            <b></b>
+        </li>
+    </ul>
+    <h2>SELECTORES DE ETIQUETA:</h2>
+    <p>
+        Los selectores de etiqueta, sirven para cambiar las propiedades de una o varias etiquetas a la vez, si por ejemplo queremos cambiar las propiedades de una etiqueta, en nuestro "archivo.css" deberiamos crear un selector de etiqueta. EJEMPLOS:
+        <ul>
+                <li>
+                    <b>h2 {} </b> Dentro de el selector "h2" podremos cambiar las propiedades de nuestras etiquetas "h2" agregando por ejemplo propiedades como "color". SI QUEREMOS POR EJEMPLO CAMBIAR EL COLOR DE TODAS LAS ETIQUETAS "h" LO HARIAMOS ASI <b>h1,h2,h3,h4,h5,h6,{}</b> y dentro de las laver hariamos los cambios
+                </li>
+                <br/>
+                <li>
+                    <b>h1,h2,h3,h4,h5,h6{} </b> dentro de este selector pondremos las propiedades que queremos cambiar y esta a su vez se aplicara en todas las etiquetas "h" que pusimos antes de las llaves {}
+                </li>
+                <br/>
+                <li>
+                    <b>p {} </b>: Sirve para cambiar las propuedades de la etiqueta "p" por lo cual todos los parrafos van a adquirir las propiedades que pongamos en este selector
+                </li>
+                <br/>
+                <li>
+                    <b></b>
+                </li>
+                <br/>
+                <li>
+                    <b></b>
+                </li>
+                <br/>
+        </ul>
+    </p>
+    <h2>SELECTORES DESCENDENTES:</h2>
+    <P>
+        Los selectores descendentes nos permiten por ejemplo apuntar a un elemento que este dentro de otro (elemento==etiqueta), por ejemplo si queremos modificar las etiquetas "b" que tengamos dentro de nuestra etiqueta "p", lo hariamos de la siguiente manera, primero escribiriamos el selector "p", luego damos un espacio(NO SEPARAR CON ",") y por ultimo pondremos nuestro elemento "b" (podriamos agregar mas elementos). De esta forma, solo se modificaran las etiquetas "b" que estan dentro de las etiquetas "p", las etiquetas "b" que esten fuera de "p" no seran afectadas. EJEMPLO:
+        <ul>
+            <li>
+                <b>p b {}</b>
+            </li>
+            <li>
+                <b>p span a {}</b> : Por ejemplo este selector descendente solo modificara los elementos "a" que esten dentro de el elemento "span" que a su vez esten dentro del elemento "p". NOTA: Los demas elementos "a" no seran modificados
+            </li>
+        </ul>
+    </P>
+    <h2>SELECTORES DE CLASE:</h2>
+    <P>
+        Si quisieramos por ejemplo cambiar un elemento "a" o un elemento "b" que este dentro de un parrafo(p), sin cambiar los demas elementos "a" o "b" que esten en otros parrafos, debemos crearle una clase al elemento especifico que deseamos cambiar (podemos poner cualquier nombre a la clase, por ejemplo usare "yellow"), lo podriamos hacer de la siguiente manera <b>< a href=# class="yellow">< /a></b> y luego en nuestro <b>"archivo.css"</b> creariamos el siguiente selector <b>".yellow{}"</b> . el punto que esta antes del yellow nos indica que hacemos referencia a una clase, lo que quiere decir que cada vez que queramos editar una clase especifica primero pondremos un punto y luego la clase, veamos un ejemplo con una clase llamada "prueba"
+        <ul>
+            <li>
+                <b>.prueba{}</b>
+            </li>
+            <br>
+            <li>
+                <b>.nombreDeLaClase{}</b>
+            </li>
+            <br>
+            <li>
+                <b>Esto tambien lo podriamos hacer con un "id" reemplazando el punto por un "#" asi <b>"# yellow {}"</b> , la diferencia es que si usamos una clase, podemos poner la misma clase en varios elementos(etiquetas)), pero si usamos un "id" solo podremos usarlo en un unico elemento(los id casi no se usan, estan quedando obsoletos). esto de las clases tambien lo podemos combinar con los "selectores descendentes" de la siguiente manera</b>
+                <ul>
+                    <li>
+                        <b>p .yellow {}</b> : Esto haria que solo cambien los elementos que contengan la clase "yellow" pero que ademas esten dentro de un elemento "p".
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <b># nombreDeLaClase{}</b> sirve para modificar un "id" de una etiqueta, pero ese id no se puede usar en varias etiquetas, el "id" se limita a una sola etiqueta, por ese motivo los "id" casi no suelen utilizarse.
+            </li>
+            <br>
+            <li>
+                <b>a[href="https//www.youtube.com"]{}</b> : sirve para dar estilo a una etiqueta en base a su atributo <b>href=""</b>, solo se modificaran los archivos que tengan igual el atributo "href"(en este caso "https//www.youtube.com")
+            </li>
+            <br>
+            <li>
+                <b><h2 id="probando"></h2></b>
+            </li>
+        </ul>
+    </P>
+</body>
+</html>

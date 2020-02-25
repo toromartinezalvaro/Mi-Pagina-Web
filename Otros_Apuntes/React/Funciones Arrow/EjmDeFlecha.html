@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 name="saludo"></h1>
+
+    <!--
+    usando "script" para crear la variable "saludoId" que sera equivalente a lo que se encuentre en el "h1" que tiene como nombre "saludo"-->
+    <script> 
+        var saludoId= document.getElementById("saludo");
+
+        /*ahora creare una funcion que me permira ingresar en la etiqueta "h1" lo que de como resultado la operacion especificada en la funcion*/
+        funcion saludar(nombre){
+            return "hola " + nombre;
+        }
+        
+        /*"saludoId.innerHTML" sirve para poner algo dentro del "h1" que tiene como nombre "saludo" en este caso llamamos la "funcion" llamada "saludar" que es equivalente a "ignacio", por lo cual veremos "ignacio" en la etiqueta "h1" */
+        saludoId.innerHTML = saludar("ignacio");
+
+    </script>    
+    
+
+
+    <!--El ejemplo con una "funcion arrow" es el siguiente:-->
+    <h1 id=suma>El resultado de su suma es: </h1>
+
+    <script>
+    
+    /*trabajaremos con el "h1" llamado "suma" que tiene el siguiente contenido "el resultado de la suma es: " y se le concatenara el "resultado"*/
+
+    var sumaId = document.getElementById("suma");
+
+    var sumar = (numero1. numero2) => numero1 + numero2;
+
+    /*sirve para agregar algo dentro de la etiqueta "h1" con "id=suma" ya que "sumaId" es equivalente a este. "+=" permite agregar algo en el "h1 sin borrar lo que ya esta"*/
+    sumaId.innerHTML += sumar(10, 20);
+    
+    /*el resultado de "sumar"(10, 20) se retornara en la funcion "innerHTML"*/
+    
+
+    </script>
+    
+
+
+    
+
+
+</body>
+</html>
