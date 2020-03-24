@@ -3,16 +3,14 @@ body {
     color:white;
   }
 
-h1,h2,h3,h4,h5,h6 {
-  color:rgb(0, 247, 33);
-}
-
 h1{
   font-size: 45px;
+  color: #8E7DFF;
 }
 
 h2{
   font-size: 30px;
+  color:#53FF17;
 }
   
 b {
@@ -39,6 +37,7 @@ a{
 
 li{
   list-style: none;
+  color: #FFE37D;
 }
 
 li b{
